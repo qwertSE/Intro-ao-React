@@ -1,0 +1,30 @@
+.campo-texto label {
+  display: block;
+
+  color: #212121;
+  text-transform: capitalize;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 22px;
+}
+
+.campo-texto input {
+  height: 2.5rem;
+  width: 100vw;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 0px;
+
+  padding-left: 1rem;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
