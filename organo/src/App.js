@@ -1,5 +1,5 @@
-import Banner from "./components/Banner/Banner.js";
-import Formulario from "./components/Form/Formulario.js";
+import Banner from "./componentes/Banner/Banner.js";
+import Formulario from "./componentes/Form/Formulario.js";
 
 function App() {
   return (
