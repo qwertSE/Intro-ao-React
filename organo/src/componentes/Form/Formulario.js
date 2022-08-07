@@ -13,18 +13,21 @@ const times = [
   "Inovação e Gestão",
 ];
 
+const submit = (event) => {
+  event.preventDefault();
+  console.log("O formulario foi enviado!");
+};
+
 function Formulario() {
   return (
     <section className="formulario">
-      <form>
+      <form onSubmit={submit}>
         <h2>Preencha os dados para criar o card do colaborador.</h2>
-        <CampoTexto label="Nome" placeholder="Digite seu nome" />
-        <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
+        <CampoTexto required={true} label="Nome" placeholder="Digite seu nome" />
+        <CampoTexto required={true} label="Cargo" placeholder="Digite seu cargo" />
         <CampoTexto label="Imagem" placeholder="Informe o endereço da imagem" />
         <ListaSuspensa label="Time" itens={times} />
-        <Botao>
-          Criar Card
-        </Botao>
+        <Botao>Criar Card</Botao>
       </form>
     </section>
   );
