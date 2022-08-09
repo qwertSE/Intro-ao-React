@@ -14,7 +14,7 @@ const times = [
   "Inovação e Gestão",
 ];
 
-function Formulario() {
+function Formulario(props) {
   const [nome, setNome] = useState("Danilo");
   const [cargo, setCargo] = useState("Desenvolvedor");
   const [imagem, setImagem] = useState("http://facebook.com");
@@ -25,6 +25,13 @@ function Formulario() {
     console.log(
       `O formulario de ${nome} no cargo de ${cargo} com a imagem no endereço ${imagem} e no time de ${time} foi enviado com sucesso!`
     );
+
+    props.novoCard({
+      nome,
+      cargo,
+      imagem,
+      time,
+    });
   };
 
   return (
