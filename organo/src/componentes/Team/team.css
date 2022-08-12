@@ -1,0 +1,15 @@
+.team {
+  text-align: center;
+  background-color: #d9f7e9;
+
+
+  /* Somente para diferenciar 'temporario' */
+  margin-bottom: 1rem;
+}
+
+.team h3 {
+  display: inline-block;
+  border-bottom: 4px solid #57c278;
+
+  padding-bottom: 0.8rem;
+}
