@@ -14,6 +14,7 @@ const times = [
   "Inovação e Gestão",
 ];
 
+/* Pré-definido para teste. */
 function Formulario(props) {
   const [nome, setNome] = useState("Danilo");
   const [cargo, setCargo] = useState("Desenvolvedor");
