@@ -2,8 +2,8 @@ import "./team.css";
 
 const Team = (props) => {
     return (
-        <section className="team">
-            <h3>{props.name}</h3>
+        <section className="team" style={{backgroundColor: props.corSecundaria}}>
+            <h3 style={{borderColor: props.corPrimaria}}>{props.name}</h3>
         </section>
     )
 };

@@ -1,6 +1,5 @@
 .team {
   text-align: center;
-  background-color: #d9f7e9;
 
 
   /* Somente para diferenciar 'temporario' */
@@ -9,7 +8,7 @@
 
 .team h3 {
   display: inline-block;
-  border-bottom: 4px solid #57c278;
+  border-bottom: 4px solid;
 
   padding-bottom: 0.8rem;
 }
