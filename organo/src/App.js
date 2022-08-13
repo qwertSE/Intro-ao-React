@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Banner from "./componentes/Banner/Banner.js";
-import Formulario from "./componentes/Form/Formulario.js";
+import Banner from "./componentes/Banner";
+import Formulario from "./componentes/Form";
 import Team from "./componentes/Team";
 
 /* Times
