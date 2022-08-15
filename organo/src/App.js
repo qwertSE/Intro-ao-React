@@ -65,7 +65,7 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario novoCard={(novoCard) => cadastro(novoCard)} />
-      {times.map(time => (<Team name={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}/>))}
+      {times.map(time => (<Team key={time.nome} name={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}/>))}
     </div>
   );
 }
