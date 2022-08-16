@@ -58,7 +58,6 @@ function App() {
   const cadastro = (novoCard) => {
     /* Spread */
     setCard([...cards, novoCard]);
-    console.log(cards);
   };
 
   return (

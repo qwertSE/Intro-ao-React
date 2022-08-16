@@ -16,10 +16,10 @@ const times = [
 
 /* Pré-definido para teste. */
 function Formulario(props) {
-  const [nome, setNome] = useState("Danilo");
-  const [cargo, setCargo] = useState("Desenvolvedor");
-  const [imagem, setImagem] = useState("http://facebook.com");
-  const [time, setTime] = useState("Front-End");
+  const [nome, setNome] = useState("");
+  const [cargo, setCargo] = useState("");
+  const [imagem, setImagem] = useState("");
+  const [time, setTime] = useState("");
 
   const submit = (event) => {
     event.preventDefault();
@@ -33,6 +33,10 @@ function Formulario(props) {
       imagem,
       time,
     });
+    setNome("");
+    setCargo("");
+    setImagem("");
+    setTime("");
   };
 
   return (
