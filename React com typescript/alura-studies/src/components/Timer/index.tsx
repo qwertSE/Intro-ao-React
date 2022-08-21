@@ -2,7 +2,7 @@ import Clock from "./Clock"
 import style from "./Timer.module.scss";
 import Button from "../Button";
 
-export default function Cronometro() {
+const Timer = () => {
   return (
     <div className={style.cronometro}>
       <p className={style.titulo}>Escolha um card e inicie o Cronômetro</p>
@@ -13,3 +13,5 @@ export default function Cronometro() {
     </div>
   );
 }
+
+export default Timer;
