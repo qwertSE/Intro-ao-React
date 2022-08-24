@@ -1,18 +1,24 @@
 import React, { useState } from "react";
+import { Itasks } from "../../types/Itasks";
 import Button from "../Button";
 import style from "./Form.module.scss";
 
-
-
-const Form = () => {
-
+const Form = ({
+  setTasks,
+}: {
+  setTasks: React.Dispatch<React.SetStateAction<Itasks[]>>;
+}) => {
   function adicionarTarefa(event: React.FormEvent) {
     event.preventDefault();
+    setTasks((oldTasks) => [...oldTasks, { ...{ task, time } }]);
+    setTask("");
+    setTime("00:00:00");
+
     console.log(`Tarefa: ${task} Duração: ${time}`);
   }
 
   const [task, setTask] = useState("");
-  const [time, setTime] = useState("00:00:00");
+  const [time, setTime] = useState("");
 
   return (
     <form className={style.novaTarefa} onSubmit={adicionarTarefa}>
