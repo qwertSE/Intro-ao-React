@@ -1,8 +1,8 @@
 import Item from "./Item";
 import style from "./List.module.scss";
-import { Itasks } from "../../types/Itasks";
+import { Itask } from "../../types/Itask";
 
-const List = ({tasks}:{tasks:Itasks[]}) => {
+const List = ({tasks}:{tasks:Itask[]}) => {
 
   return (
     <aside className={style.listaTarefas}>
