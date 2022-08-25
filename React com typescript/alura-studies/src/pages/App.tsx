@@ -7,6 +7,9 @@ import style from "./App.module.scss";
 
 function App() {
   const [tasks, setTasks] = useState<Itasks[]>([]);
+
+  /* Apenas para teste */
+  console.log(tasks)
   return (
     <div className={style.AppStyle}>
       <Form setTasks={setTasks}/>
