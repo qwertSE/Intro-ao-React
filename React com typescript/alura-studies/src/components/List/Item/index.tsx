@@ -5,32 +5,26 @@ interface Props extends ITask {
   selectTask: (selectedTask: ITask) => void;
 }
 
-const Item = (
-  { 
-    task,
-    time,
-    selected,
-    done,
-    id,
-    selectTask
-  }: Props) => {
-
+const Item = ({ task, time, selected, done, id, selectTask }: Props) => {
   return (
     <li
-      className={`${style.item} ${selected ? style.itemSelecionado : ''}`}
+      className={`${style.item} ${selected ? style.itemSelecionado : ""} ${
+        done ? style.itemCompletado : ""
+      }`}
       onClick={() =>
-        selectTask(
-          {
-            task,
-            time,
-            selected,
-            done,
-            id,
-          }
-        )}
+        !done &&
+        selectTask({
+          task,
+          time,
+          selected,
+          done,
+          id,
+        })
+      }
     >
       <h3>{task}</h3>
       <span>{time}</span>
+      {done && <span className={style.concluido} aria-label="task done"></span>}
     </li>
   );
 };
