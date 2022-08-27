@@ -61,7 +61,7 @@ const Form = ({
           required
         />
       </div>
-      <Button name="teste"></Button>
+      <Button name="Adicionar"></Button>
     </form>
   );
 };
