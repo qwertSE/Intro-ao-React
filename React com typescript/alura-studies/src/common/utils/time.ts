@@ -1,4 +1,4 @@
-export function timeToSeconds(time: string): Number {
+export function timeToSeconds(time: string): number {
   const [hours, minutes, seconds] = time.split(":");
 
   const hoursInSeconds = Number(hours) * 3600;

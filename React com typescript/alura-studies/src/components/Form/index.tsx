@@ -24,7 +24,7 @@ const Form = ({
       },
     ]);
     setTask("");
-    setTime("00:00:00");
+    setTime("");
 
     /* Apenas para teste */
     console.log(`Tarefa: ${task} Duração: ${time}`);
@@ -57,11 +57,11 @@ const Form = ({
           value={time}
           onChange={(event) => setTime(event.target.value)}
           min="00:00:00"
-          max="03:00:00"
+          max="01:39:59"
           required
         />
       </div>
-      <Button>Adicionar</Button>
+      <Button name="teste"></Button>
     </form>
   );
 };
