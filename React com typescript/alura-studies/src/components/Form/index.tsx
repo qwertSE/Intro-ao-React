@@ -57,7 +57,7 @@ const Form = ({
           value={time}
           onChange={(event) => setTime(event.target.value)}
           min="00:00:00"
-          max="23:59:99"
+          max="23:59:59"
           required
         />
       </div>
