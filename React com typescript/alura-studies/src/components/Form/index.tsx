@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Itask } from "../../types/Itask";
+import { ITask } from "../../types/Itask";
 import Button from "../Button";
 import style from "./Form.module.scss";
 import { v4 as uuidv4 } from "uuid";
@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 const Form = ({
   setTasks,
 }: {
-  setTasks: React.Dispatch<React.SetStateAction<Itask[]>>;
+  setTasks: React.Dispatch<React.SetStateAction<ITask[]>>;
 }) => {
   function adicionarTarefa(event: React.FormEvent) {
     event.preventDefault();
@@ -25,7 +25,7 @@ const Form = ({
     ]);
     setTask("");
     setTime("00:00:00");
-    
+
     /* Apenas para teste */
     console.log(`Tarefa: ${task} Duração: ${time}`);
   }
